@@ -1,0 +1,17 @@
+function[espectrograma1] = Espectrograma_201910663(a, e, i, o ,u)
+
+    [a, Fa] = audioread("A.m4a");
+    [e, Fb] = audioread("E.m4a");
+    [i, Fc] = audioread("I.m4a");
+    [o, Fd] = audioread("O.m4a");
+    [u, Fe] = audioread("U.m4a");
+
+    %reproduzir som: sound(a, Fs);
+
+    espectrograma1 = spectrogram(a,1024,1023,[],Fa,'yaxis');
+    espectrograma2 = spectrogram(b,1024,1023,[],Fb,'yaxis');
+    espectrograma3 = spectrogram(c,1024,1023,[],Fc,'yaxis');
+    espectrograma4 spectrogram(d,1024,1023,[],Fd,'yaxis')
+    spectrogram(e,1024,1023,[],Fe,'yaxis')
+
+end
